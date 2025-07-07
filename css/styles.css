@@ -493,7 +493,7 @@ img {
     border: 1px solid #ffffff;
     background-color: transparent;
     font-size: 12px;
-    line-height: 2px;
+    line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -651,10 +651,11 @@ img {
     border-color: #4d5ae5;
 }
 
-.input-area:hover .input-icon, 
-.input-area:focus .input-icon {
+.input-text:hover + .input-icon, 
+.input-text:focus + .input-icon {
     fill: #4d5ae5;
 }
+
 
 .input-icon {
     position: absolute;
@@ -714,7 +715,7 @@ img {
     margin-right: 8px;
 }
 
-.check-input:checked .check-label-box {
+.check-input:checked + label .check-label-box {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
